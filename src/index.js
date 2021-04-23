@@ -11,7 +11,7 @@ async function load_model() {
     // It's possible to load the model locally or from a repo
     // You can choose whatever IP and PORT you want in the "http://127.0.0.1:8080/model.json" just set it before in your https server
     //const model = await loadGraphModel("http://127.0.0.1:8080/model.json");
-    const model = await loadGraphModel("https://raw.githubusercontent.com/hugozanini/TFJS-object-detection/master/models/kangaroo-detector/model.json");
+    const model = await loadGraphModel("https://raw.githubusercontent.com/harsh-jadhav/TFJS-Obj-Det/main/models/connector-detector/model.json");
     return model;
   }
 
@@ -152,8 +152,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Real-Time Object Detection: Kangaroo</h1>
-        <h3>MobileNetV2</h3>
+        <h1>Real-Time Object Detection: Connector</h1>
+        <h3>Show me the Connector</h3>
         <video
           style={{height: '600px', width: "500px"}}
           className="size"
